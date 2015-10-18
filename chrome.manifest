@@ -1,0 +1,5 @@
+
+content tzcpush content/
+skin	tzcpush classic/1.0 skin/
+locale	tzcpush en-US locale/en-US/
+overlay chrome://messenger/content/messenger.xul chrome://tzcpush/content/overlay.xul
