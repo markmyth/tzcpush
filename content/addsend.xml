@@ -1,0 +1,11 @@
+<Sync xmlns="AirSync:">
+<Collections>
+<Collection>
+<Class>Calendar</Class>
+<SyncKey></SyncKey>
+<CollectionId></CollectionId>
+<Commands>
+</Commands>
+</Collection>
+</Collections>
+</Sync>

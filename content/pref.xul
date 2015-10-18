@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://tzcpush/locale/overlay.dtd">
+
+<prefwindow id="tzcpush.tzsettings" 
+ xmlns:html="http://www.w3.org/1999/xhtml"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+ style="width: 600px; height: 400px"
+ persist="width height"
+ onload="tzcpush.onopen()" onunload="tzcpush.onclose()" 
+ title="TZC Settings" >
+ 
+
+
+ 
+	<prefpane id="settings" label="tzcpush" image="chrome://tzcpush/skin/tz-push.png" >
+	      
+<preferences>
+	
+	</preferences>
+	<vbox>
+		<groupbox>
+			<caption label="cal selector" />
+	<listbox id="localCals" rows="3" onclick="tzcpush.setselect(this.value)">
+            
+        </listbox>
+			
+		</groupbox>
+		
+        <label />
+        <button label="test button" id="syncbut" onclick="tzcpush.onopen();"/>
+    
+	</vbox>
+		
+</prefpane>
+         
+<script type="application/x-javascript" src="chrome://tzcpush/content/pref.js" />        
+ 
+</prefwindow>

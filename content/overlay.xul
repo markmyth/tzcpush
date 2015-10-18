@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://tzcpush/skin/browserOverlay.css" ?>
+<!DOCTYPE overlay SYSTEM "chrome://tzcpush/locale/overlay.dtd">
+<overlay id="tzcpush_extensionOverlay"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+         >
+ 
+ <script type="application/x-javascript" src="chrome://tzcpush/content/cal.js" />
+ 
+  <menupopup id="mail-menubar">
+    <menuitem id="helloworld-hello"
+     label="test cal"
+     oncommand="tzcpush.go();"/>
+  </menupopup>
+  
+  <menubar id="taskPopup">
+      <menu id="tzcpushmain"  label="Tzcpush" >
+      <menupopup>
+        <menuitem id="tzcpush.tzsettingsmenu"
+          label="Settings;"
+          oncommand="tzcpush.onMenuItemCommand(event);" />
+        <menuitem id="tzcpush.go"
+          label="Sync Cal"
+          oncommand="tzcpush.go();" />
+      </menupopup>
+    </menu>
+  </menubar>
+ 
+</overlay>
